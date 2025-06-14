@@ -47,16 +47,9 @@ app/migrations/
 # Logs
 *.log
 
-# Test / coverage reports
-htmlcov/
-.coverage
-.coverage.*
-.pytest_cache/
+
 
 # MyPy
 .mypy_cache/
 
-# Docker
-docker-compose*.yml
-Dockerfile*
 
