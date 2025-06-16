@@ -241,5 +241,5 @@ curl --location 'http://localhost:8000/prices/latest?symbol=AAPL'
 
 ## Video Walkthrough
 
-A 5‑minute walkthrough video is available in link `https://youtu.be/6bCCHDhando`.
+A 5‑minute walkthrough video is available in link `https://youtu.be/SAJ1ylc8Q5k`.
 
