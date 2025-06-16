@@ -2,6 +2,6 @@ from pydantic import BaseModel
 
 class Stock(BaseModel):
     symbol:str
-    price:int
+    price:float
     timestamp:str
     provider:str

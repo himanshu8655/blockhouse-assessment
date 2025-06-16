@@ -3,13 +3,13 @@ from app.api.price import router as prices_router
 from contextlib import asynccontextmanager
 from app.core.config import settings
 import aioredis
+from app.core.database import engine, Base
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    app.state.redis = await aioredis.from_url(
-        settings.redis_url, encoding="utf8", decode_responses=True
-    )
+    Base.metadata.create_all(bind=engine)
+    app.state.redis = await aioredis.from_url(settings.redis_url, encoding="utf8", decode_responses=True)
     try:
         yield
     finally:
