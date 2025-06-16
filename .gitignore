@@ -33,9 +33,6 @@ ENV/
 # PyCharm
 .idea/
 
-# dotenv / env files
-.env
-.env.* 
 
 # SQLite database files
 *.db
